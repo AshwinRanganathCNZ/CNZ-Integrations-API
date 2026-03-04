@@ -1,0 +1,241 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: CNZ-Integrations
+meta:
+  id: wrk_c2322f744f10425ba4671879fc5aa383
+  created: 1772628528248
+  modified: 1772628528248
+  description: ""
+collection:
+  - name: CORE
+    meta:
+      id: fld_9cb591764d64416a9b4ba0dbf8a97757
+      created: 1772094801283
+      modified: 1772094801283
+      sortKey: -1772094801283
+      description: ""
+    children:
+      - name: Shiphero
+        meta:
+          id: fld_0f849e9f3bd14160b59179e6e07d9398
+          created: 1772094818565
+          modified: 1772094818565
+          sortKey: -1772094818565
+          description: ""
+        children:
+          - url: http://localhost:8080/shiphero/full-order-details
+            name: Order Details - Detailed
+            meta:
+              id: req_4b0eeabdbd8b4e3aa1cdfb95150f0af6
+              created: 1772080869191
+              modified: 1772422115867
+              isPrivate: false
+              description: ""
+              sortKey: -1772094826589
+            method: GET
+            parameters:
+              - name: client
+                value: POTTERS_SHED
+                disabled: false
+              - name: orderId
+                value: T3JkZXI6NzY4NzA5MTc2
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/shiphero/inventory
+            name: Product Inventory List
+            meta:
+              id: req_80cfab3080ce4791b254b83a4cc1053d
+              created: 1772095340879
+              modified: 1772095403451
+              isPrivate: false
+              description: ""
+              sortKey: -1772095340879
+            method: GET
+            parameters:
+              - name: client
+                value: POTTERS_SHED
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Cin7Core
+        meta:
+          id: fld_e40186cd68f7421a8d81e6ddb2745ac0
+          created: 1772095846219
+          modified: 1772095846219
+          sortKey: -1772095846219
+          description: ""
+        children:
+          - url: http://localhost:8080/cin7core/sale/details
+            name: Sale Detail by ID
+            meta:
+              id: req_2a318d4a288b4d4989989a0082bc69ed
+              created: 1772095851551
+              modified: 1772095919698
+              isPrivate: false
+              description: ""
+              sortKey: -1772095851551
+            method: GET
+            parameters:
+              - name: saleId
+                value: 510bb4af-897f-489b-8f34-1a7773307972
+              - name: client
+                value: VITICULT
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/cin7core/product-availability
+            name: Product Availability - 1 Page
+            meta:
+              id: req_546d4335080f4896978f999d6476a9c4
+              created: 1772095933213
+              modified: 1772096708802
+              isPrivate: false
+              description: ""
+              sortKey: -1772095933213
+            method: GET
+            parameters:
+              - name: client
+                value: POTTERS_SHED
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Cin7 Omni
+        meta:
+          id: fld_2c7c4e3bfca84550886cea17e07c4b4a
+          created: 1772103751885
+          modified: 1772103995198
+          sortKey: -1772103751885
+          description: ""
+        children:
+          - url: http://localhost:8080/cin7omni/adjustments
+            name: Adjustments
+            meta:
+              id: req_8f856c4f1b0d45f48f62411b51f5abf6
+              created: 1772103772706
+              modified: 1772103995198
+              isPrivate: false
+              description: ""
+              sortKey: -1772103772706
+            method: GET
+            parameters:
+              - name: client
+                value: OUTSIDE_SPORTS
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+  - name: CLIENT
+    meta:
+      id: fld_02d4cd9ad4224443a44c7a11cc830195
+      created: 1772094850900
+      modified: 1772094850900
+      sortKey: -1772094850900
+      description: ""
+    children:
+      - name: POTTERS_SHED
+        meta:
+          id: fld_d330ebd8e4a34c00824ff97fc6a6999e
+          created: 1772094865722
+          modified: 1772094865722
+          sortKey: -1772094865722
+          description: ""
+        children:
+          - url: http://localhost:8080/potters_shed/cin7core-shiphero/stock-variance
+            name: Stock Variance
+            meta:
+              id: req_96210e4ccf2d4e2da028a47b2ec706d6
+              created: 1772097401367
+              modified: 1772104010703
+              isPrivate: false
+              description: ""
+              sortKey: -1772097401367
+            method: GET
+            parameters:
+              - name: client
+                value: POTTERS_SHED
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: VALKIN
+        meta:
+          id: fld_d7f03487ba404bc180d6aaa18285e70d
+          created: 1772510617460
+          modified: 1772510617460
+          sortKey: -1772510617460
+          description: ""
+        children:
+          - url: http://localhost:8080/valkin/cin7omni-grl/stock-variance
+            name: Stock Variance
+            meta:
+              id: req_4f848372cfb7478ea241c82f2d6b4678
+              created: 1772510626154
+              modified: 1772510634494
+              isPrivate: false
+              description: ""
+              sortKey: -1772510626154
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_7dc17bffc2f35fd43f4b422adcfd419e03afc0fc
+    created: 1772628528254
+    modified: 1772628528254
+environments:
+  name: Base Environment
+  meta:
+    id: env_7dc17bffc2f35fd43f4b422adcfd419e03afc0fc
+    created: 1772628528253
+    modified: 1772628528253
+    isPrivate: false
