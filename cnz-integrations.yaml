@@ -128,11 +128,11 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
-      - name: Cin7 Omni
+      - name: Cin7Omni
         meta:
           id: fld_2c7c4e3bfca84550886cea17e07c4b4a
           created: 1772103751885
-          modified: 1772103995198
+          modified: 1772629563970
           sortKey: -1772103751885
           description: ""
         children:
@@ -174,6 +174,117 @@ collection:
                 disabled: false
             headers:
               - name: accept
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/cin7omni/purchase-orders/11617
+            name: Purchase Order by ID
+            meta:
+              id: req_6834942f180b401fb6c92ce24b43dfe7
+              created: 1772629546407
+              modified: 1772629556468
+              isPrivate: false
+              description: ""
+              sortKey: -1772629546407
+            method: GET
+            parameters:
+              - name: client
+                value: VALKIN
+                disabled: false
+            headers:
+              - name: accept
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/cin7omni/purchase-orders
+            name: Purchase Order By Filter
+            meta:
+              id: req_2c999d801aa442a2bc581e089044546c
+              created: 1772629586241
+              modified: 1772629597468
+              isPrivate: false
+              description: ""
+              sortKey: -1772629586241
+            method: GET
+            parameters:
+              - name: client
+                value: VALKIN
+                disabled: false
+              - name: where
+                value: Status='Approved'
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/cin7omni/sales-orders/test
+            name: Top 10 Sales Order
+            meta:
+              id: req_11b4b41dd1ae44feaaeb18fe5d3e7498
+              created: 1772629620166
+              modified: 1772629628223
+              isPrivate: false
+              description: ""
+              sortKey: -1772629620166
+            method: GET
+            parameters:
+              - name: client
+                value: VALKIN
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: GRL
+        meta:
+          id: fld_8e1c61dde4a1454986c06e4ec05a8791
+          created: 1772629815062
+          modified: 1772629815062
+          sortKey: -1772629815062
+          description: ""
+        children:
+          - url: http://localhost:8080/grl/sku/get
+            name: Get Product by SKU
+            meta:
+              id: req_ab6d45d11a1543cb9347666d05946614
+              created: 1772629820262
+              modified: 1772630211444
+              isPrivate: false
+              description: ""
+              sortKey: -1772629820262
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"lstsku": ["D-MT-U"]
+                }
+            parameters:
+              - name: client
+                value: VALKIN
+                disabled: false
+            headers:
+              - name: Content-Type
                 value: application/json
             settings:
               renderRequestBody: true
