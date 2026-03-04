@@ -158,6 +158,31 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+          - url: http://localhost:8080/cin7omni/sales-orders/11625
+            name: Sales Order by ID
+            meta:
+              id: req_ba59bd17c520489099081582373c15db
+              created: 1772629493317
+              modified: 1772629505767
+              isPrivate: false
+              description: ""
+              sortKey: -1772629493317
+            method: GET
+            parameters:
+              - name: client
+                value: VALKIN
+                disabled: false
+            headers:
+              - name: accept
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
   - name: CLIENT
     meta:
       id: fld_02d4cd9ad4224443a44c7a11cc830195
@@ -208,24 +233,128 @@ collection:
           sortKey: -1772510617460
           description: ""
         children:
-          - url: http://localhost:8080/valkin/cin7omni-grl/stock-variance
-            name: Stock Variance
+          - name: Cin7Omni - GRL
             meta:
-              id: req_4f848372cfb7478ea241c82f2d6b4678
-              created: 1772510626154
-              modified: 1772510634494
-              isPrivate: false
+              id: fld_9a08fbb3a4f547b6a21aaef7ff1c3e38
+              created: 1772629308027
+              modified: 1772629308027
+              sortKey: -1772629308027
               description: ""
-              sortKey: -1772510626154
-            method: GET
-            settings:
-              renderRequestBody: true
-              encodeUrl: true
-              followRedirects: global
-              cookies:
-                send: true
-                store: true
-              rebuildPath: true
+            children:
+              - url: http://localhost:8080/valkin/cin7omni-grl/stock-variance
+                name: Stock Variance
+                meta:
+                  id: req_4f848372cfb7478ea241c82f2d6b4678
+                  created: 1772510626154
+                  modified: 1772629321089
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1772629315531
+                method: GET
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: http://localhost:8080/valkin/cin7omni-grl/sales-order/sync
+                name: Sales Order Sync
+                meta:
+                  id: req_1880f15330b142c6b31243be7d6ad697
+                  created: 1772629169527
+                  modified: 1772629319411
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1772629315431
+                method: GET
+                headers:
+                  - name: content-type
+                    value: application/json
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: http://localhost:8080/valkin/cin7omni-grl/products/sync
+                name: Products Sync
+                meta:
+                  id: req_cae5d17482834a84b2d96c66fe9ed0eb
+                  created: 1772629198518
+                  modified: 1772629317743
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1772629315331
+                method: GET
+                headers:
+                  - name: content-type
+                    value: application/json
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: http://localhost:8080/valkin/cin7omni-grl/purchase-orders/sync
+                name: Purchase Order Sync
+                meta:
+                  id: req_597914c4f2624226a1d85a36b48c4571
+                  created: 1772629232538
+                  modified: 1772629315274
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1772629315231
+                method: GET
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: http://localhost:8080/valkin/cin7omni-grl/sales-orders/update
+                name: Sales Order Update
+                meta:
+                  id: req_e9bb148e5282484a8c9251527205b5ea
+                  created: 1772629349328
+                  modified: 1772629356103
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1772629349328
+                method: GET
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
+              - url: http://localhost:8080/valkin/cin7omni-grl/purchase-orders/update
+                name: Purchase Order Update
+                meta:
+                  id: req_63a996e300f942909ee427141c05f137
+                  created: 1772629370265
+                  modified: 1772629379863
+                  isPrivate: false
+                  description: ""
+                  sortKey: -1772629370265
+                method: GET
+                settings:
+                  renderRequestBody: true
+                  encodeUrl: true
+                  followRedirects: global
+                  cookies:
+                    send: true
+                    store: true
+                  rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
