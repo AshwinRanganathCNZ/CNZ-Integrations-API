@@ -128,6 +128,35 @@ collection:
                 send: true
                 store: true
               rebuildPath: true
+          - url: http://localhost:8080/cin7core/sale/creditnote
+            name: Sale Credit Note By ID
+            meta:
+              id: req_cf80a39140b74268905ac8cec753d88a
+              created: 1772679253868
+              modified: 1772679274253
+              isPrivate: false
+              description: ""
+              sortKey: -1772679253868
+            method: GET
+            parameters:
+              - name: client
+                value: VITICULT
+                disabled: false
+              - name: saleId
+                value: e4c87b67-9777-43f7-913c-a84e0570effa
+                disabled: false
+            headers:
+              - name: Cookie
+                value: DEARAffinity=1c8086f6bee5867d714c634b297a636f;
+                  DEARAffinityCORS=1c8086f6bee5867d714c634b297a636f
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
       - name: Cin7Omni
         meta:
           id: fld_2c7c4e3bfca84550886cea17e07c4b4a
